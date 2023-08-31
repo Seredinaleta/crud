@@ -1,0 +1,84 @@
+<main>
+  <section>
+    <h1 class='page__title'>Редагування товару</h1>
+
+    <div class='form'>
+      <h2 class='form__title'>Інформація про товар</h2>
+      {{#with data}}
+        <form method='POST' action='/product-edit'>
+          <div class='form__content'>
+
+            <div class='form__field'>
+              <div class='form__field-data'>
+                <label for='name' class='form__label'>Назва
+                  товару</label>
+                <input
+                  type='text'
+                  value={{name}}
+                  name='name'
+                  class='form__input'
+                />
+              </div>
+              <div class='form__field-data'>
+                <label
+                  for='price'
+                  class='form__label'
+                >Ціна</label>
+                <input
+                  type='number'
+                  value={{price}}
+                  name='price'
+                  class='form__input'
+                />
+              </div>
+              <div class='form__field-data'>
+                <label
+                  for='id'
+                  class='form__label'
+                >ID</label>
+                <input
+                  type='number'
+                  value={{id}}
+                  name='id'
+                  class='form__input'
+                />
+              </div>
+            </div>
+            <div class='form__textarea'>
+              <label
+                for='description'
+                class='form__label'
+              >Короткий опис товару</label>
+              <textarea
+                name='description'
+                value={{description}}
+                class='form__description'
+                cols='30'
+                rows='3'
+              >{{description}}</textarea>
+              <label
+                for='description'
+                class='form__label-light'
+              >Відображається у картці товару</label>
+            </div>
+            <div class='form__buttons'>
+              <button
+                type='submit'
+                class='form__button click'
+              >Зберегти оновлення</button>
+
+              <div
+                class='form__button form__button-delete click'
+              ><a
+                  class='form__button-link'
+                  href='/product-delete?id={{id}}'
+                >Видалити</a></div>
+            </div>
+
+          </div>
+        </form>
+      {{/with}}
+    </div>
+
+  </section>
+</main>

@@ -1,3 +1,16 @@
+.click {
+  transition: opacity;
+  transition-delay: 0.5s;
+}
 
+.click:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.click:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=var.css.map */
