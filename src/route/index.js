@@ -119,31 +119,39 @@ router.post('/user-update', function (req, res) {
 class Product {
   static #list = []
   constructor(name, price, description) {
-    this.id = Math.trunc(Math.random() * 100000)
+    this.id = Math.floor(Math.random() * 100000)
     this.createDate = new Date().toISOString()
     this.name = name
-    this.price = Number(price)
+    this.price = price
     this.description = description
   }
 
   static getList = () => this.#list
+
+  // checkedId = (id) => this.id === id
+
   static add = (product) => this.#list.push(product)
+
   static getById = (id) =>
     this.#list.find((product) => product.id === id)
 
-  
-
   static updateById = (id, data) => {
     const product = this.getById(id)
-    const {name, price, description } = data;
+    const { name, price, description } = data
 
     if (product) {
-      if(name){product.name=name}else if(price){product.price=price}else if(description){product.description=description}
+      product.name = name
+      product.price = price
+      product.description = description
       return true
-    } else {
-      return false
     }
   }
+
+  // static update = (name, { product }) => {
+  //   if (name) {
+  //     product.name = name
+  //   }
+  // }
 
   static deleteById = (id) => {
     const index = this.#list.findIndex(
@@ -240,22 +248,25 @@ router.get('/product-edit', function (req, res) {
 router.post('/product-edit', function (req, res) {
   const { id, name, price, description } = req.body
 
-  const product = Product.updateById(Number(id),{name,
+  const product = Product.updateById(Number(id), {
+    name,
     price,
-    description})
+    description,
+  })
 
   console.log(id)
   console.log(product)
-if(product){
-  res.render('product-alert', {
-    style: 'product-alert',
-    info: 'Товар оновлено'})
-}else{res.render('product-alert', {
-  style: 'product-alert',
-  info: `Сталася помилка в оновленні`
-   
-})}
-  
+  if (product) {
+    res.render('product-alert', {
+      style: 'product-alert',
+      info: 'Товар оновлено',
+    })
+  } else {
+    res.render('product-alert', {
+      style: 'product-alert',
+      info: `Сталася помилка в оновленні`,
+    })
+  }
 })
 // ================================================================
 router.get('/product-delete', function (req, res) {

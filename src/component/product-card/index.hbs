@@ -1,3 +1,8 @@
+{{#with data.products}}
+  {{#if isEmpty}}
+    <mark>Список продуктів пустий</mark>
+  {{else}}
+  {{#each list}}
 <div class='product-card'>
   <h3 class='product-card__title'>{{name}}</h3>
   <p class='product-card__desc'>{{description}}</p>
@@ -11,3 +16,7 @@
     >Редагувати</a>
   </div>
 </div>
+{{/each}}
+
+{{/if}}
+{{/with}}

@@ -6,17 +6,9 @@
   <h1 class='page__title'>Список товарів</h1>
   <section>
     <div class='product__list'>
-      {{#with data.products}}
-        {{#if isEmpty}}
-          <mark>Список продуктів пустий</mark>
-        {{else}}
-
-          {{#each list}}
-            {{>product-card}}
-          {{/each}}
-
-        {{/if}}
-      {{/with}}
+      
+    {{>product-card}}
+         
     </div>
   </section>
 </main>
