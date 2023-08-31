@@ -1,8 +1,24 @@
 $colorMap: ( 
     light:#ddd,
+    accent:rgb(55, 88, 234),
+    lable:#7c7c80,
+    del:rgb(223, 38, 38)
 );
 
 @function color($key){
     @return map-get($colorMap,$key);
 }
+
+.click{
+    transition: opacity;
+    transition-delay: 0.5s;
+ }
+ .click:hover {
+    opacity: 0.8;
+    cursor: pointer;
+ }
+ .click:active {
+    opacity: 0.4;
+    cursor: pointer;
+ }   
    

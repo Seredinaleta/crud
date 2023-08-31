@@ -1,0 +1,114 @@
+.click {
+  transition: opacity;
+  transition-delay: 0.5s;
+}
+
+.click:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.click:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page__title {
+  color: rgb(55, 88, 234);
+  font-size: 24px;
+  margin: 16px;
+  padding: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 32px;
+  margin: 32px;
+  border: 1px solid #ddd;
+}
+.form__title {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.form__field {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.form__field-data {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form__label {
+  font-size: 14px;
+  padding-right: 8px;
+}
+.form__input {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.form__textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form__description {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+.form__label-light {
+  color: #7c7c80;
+  font-size: 12px;
+}
+.form__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.form__button {
+  background-color: rgb(55, 88, 234);
+  color: fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 5px;
+}
+.form__button-delete {
+  background-color: rgb(223, 38, 38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__button-link {
+  margin: 0 auto;
+  text-decoration: none;
+  color: fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.user__list li {
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

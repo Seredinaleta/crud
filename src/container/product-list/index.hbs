@@ -1,0 +1,22 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+<main>
+  <h1 class='page__title'>Список товарів</h1>
+  <section>
+    <div class='product__list'>
+      {{#with data.products}}
+        {{#if isEmpty}}
+          <mark>Список продуктів пустий</mark>
+        {{else}}
+
+          {{#each list}}
+            {{>product-card}}
+          {{/each}}
+
+        {{/if}}
+      {{/with}}
+    </div>
+  </section>
+</main>
