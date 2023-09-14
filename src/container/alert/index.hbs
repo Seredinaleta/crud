@@ -3,9 +3,19 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
  }}
 <main>
-  Index page
-</main>
+<div class='message'>
+  <div class='message-content'>
+    {{#with data}}
+    <h1 class='message__title'>{{message}}
+    </h1>
+    <span class='message__info'>{{info}}</span>
+  </div>
 
+  <a class='message__button click' href={{link}}>Повернутися
+    назад</a>
+{{/with}}
+</div>
+</main>
 {{! 
     Цей код містить лише те, що буде виводитись в <body>
     Адже наш layout/default.hbs має вже структуру HTML

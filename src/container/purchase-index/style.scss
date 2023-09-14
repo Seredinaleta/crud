@@ -1,0 +1,9 @@
+@use '../../lib/service.scss' as s;
+
+.page__title {
+    color:s.color("accent");
+    font-size: 24px;
+    margin: s.space(4);
+    padding: s.space(4);
+}
+
