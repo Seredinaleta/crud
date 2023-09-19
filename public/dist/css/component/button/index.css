@@ -1,0 +1,36 @@
+.click {
+  transition: opasity 0.3s ease;
+}
+
+.click:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.click:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  padding: 8px 119px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  background-color: #0050FF;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: opasity 0.3s ease;
+}
+.button:hover {
+  opacity: 0.7;
+}
+.button:active {
+  opacity: 0.4;
+}
+
+/*# sourceMappingURL=index.css.map */

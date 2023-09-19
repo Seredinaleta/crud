@@ -1,25 +1,9 @@
 .click {
-  transition: opacity;
-  transition-delay: 0.5s;
+  transition: opasity 0.3s ease;
 }
 
 .click:hover {
   opacity: 0.8;
-  cursor: pointer;
-}
-
-.click:active {
-  opacity: 0.4;
-  cursor: pointer;
-}
-
-.click {
-  transition: opacity;
-  transition-delay: 0.5s;
-}
-
-.click:hover {
-  opacity: 0.7;
   cursor: pointer;
 }
 

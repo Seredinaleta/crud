@@ -1,0 +1,33 @@
+.click {
+  transition: opasity 0.3s ease;
+}
+
+.click:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.click:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.info_tab {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 4px;
+}
+
+.info__title {
+  font-size: 20px;
+  color: #212529;
+  font-weight: 500;
+}
+
+.info__value {
+  font-size: 16px;
+  color: #000;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,17 +1,6 @@
 @use '../../lib/service.scss' as s;
 
-.click{
-    transition: opacity;
-    transition-delay: 0.5s;
- }
-.click:hover {
-    opacity: 0.7;
-    cursor: pointer;
- }
- .click:active {
-    opacity: 0.4;
-    cursor: pointer;
- } 
+
 .message {
   
   padding: s.space(4);

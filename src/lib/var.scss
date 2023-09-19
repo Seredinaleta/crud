@@ -11,8 +11,7 @@ $colorMap: (
 }
 
 .click{
-    transition: opacity;
-    transition-delay: 0.5s;
+    transition: opasity 0.3s ease ;
  }
  .click:hover {
     opacity: 0.8;

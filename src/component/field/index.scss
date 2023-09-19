@@ -1,0 +1,34 @@
+@use '../../lib/service.scss' as s;
+.field {
+display: flex;
+flex-direction: column;
+gap: s.space(1);
+padding-bottom: s.space(3);
+width: 100%;
+
+}
+.field__input{
+    padding: s.space(2);
+    border: 1px solid s.color("light");
+    border-radius: 8px;
+    border-radius: s.space(3);
+   
+}
+
+.field__label{
+    font-size: 16px;
+}
+.field__label-down{
+  font-size: 14px; 
+  color: #808080; 
+}
+.field-disabled {
+  position: absolute;
+  display: none;
+}
+ 
+   
+   
+
+  
+    

@@ -1,0 +1,28 @@
+@use '../../lib/service.scss' as s;
+
+.info_tab {
+display: flex;
+flex-direction: column;
+gap: s.space(2);
+padding-bottom: s.space(1);
+}
+
+.info__title{
+    font-size: 20px;
+    color: s.color("main");
+    font-weight: 500;
+    
+   
+}
+.info__value{
+    
+    font-size: 16px;
+    color: #000;
+    
+}
+ 
+   
+   
+
+  
+    

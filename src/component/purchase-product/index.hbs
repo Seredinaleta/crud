@@ -3,19 +3,24 @@
   <div class='product-card'>
     <img
       src='{{img}}'
-      alt='Картка товару'
+      alt='{{title}}'
       class='product-card__image'
     />
     <h2 class='product-card__title'>{{title}}</h2>
     <p class='product-card__subtitle'>{{description}}</p>
     {{#each category}}
-      <span
+      <p
         class='product-card__category product-card__category--{{id}}'
-      >{{text}}</span>
+      >{{text}}</p>
     {{/each}}
-    <button class='product-card__button'>
+    <a
+      href='/purchase-product?id={{id}}'
+      class='product-card__button click'
+    >
       Купити зараз:
-      {{price}}₴</button>
+      {{price}}
+      ₴</a>
 
   </div>
+
 {{/with}}

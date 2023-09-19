@@ -1,0 +1,43 @@
+<main>
+  
+  <section class="product">
+    {{#with data.product}}
+    
+    <img
+      src='{{img}}'
+      alt='{{title}}'
+      class='product__image'
+    />
+    <div class="product-info">
+      <form method="POST" action="/purchase-create?id={{id}}">
+ 
+    <h2 class='product-info__title'>{{title}}</h2>
+    {{>divider}}
+    <p class='product-info__subtitle'>{{description}}</p>
+    {{>divider}}
+    {{>field type="number" label="Кількість товару" name="amount" value="1"}}
+    
+    <button class='product-info__button click'
+    >
+      Купити зараз:
+      {{price}}
+      ₴</button>
+    </div>
+ </form> 
+    
+    
+  {{/with}}  
+  
+</section>
+  <section class="page__section">
+{{>heading title = "Інші товари" info ="Комп'ютери та ноутбуки"}}
+  <div class="product__container">
+
+    
+    {{#each data.list}}
+    {{>purchase-product data = this}}
+    {{/each}}
+    
+  </div>
+</section>
+</main>

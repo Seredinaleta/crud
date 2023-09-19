@@ -1,0 +1,10 @@
+<div class="field {{#if disabled}}field-disabled{{/if}}">
+  <label for='{{name}}'class="field__label" >{{label}}</label>
+  <input
+    name="{{name}}"
+    class='field__input'
+    type="{{#if type}}{{type}}{{/if}}"
+    value="{{#if value}}{{value}}{{/if}}"
+  />
+  <label for='{{name}}'class="field__label-down" >{{label-down}}</label>
+</div>

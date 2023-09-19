@@ -1,0 +1,44 @@
+.click {
+  transition: opasity 0.3s ease;
+}
+
+.click:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.click:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 12px;
+  width: 100%;
+}
+
+.field__input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  border-radius: 12px;
+}
+
+.field__label {
+  font-size: 16px;
+}
+
+.field__label-down {
+  font-size: 14px;
+  color: #808080;
+}
+
+.field-disabled {
+  position: absolute;
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */
