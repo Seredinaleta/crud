@@ -3,7 +3,9 @@ $colorMap: (
     accent:#0050FF,
     lable:#7c7c80,
     del:rgb(223, 38, 38),
-    main: #212529
+    main: #212529,
+    dark:#121212,
+    border:#808080,
 );
 
 @function color($key){

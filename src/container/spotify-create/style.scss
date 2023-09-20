@@ -1,0 +1,9 @@
+@use '../../lib/service.scss' as s;
+@use '../../lib/spotify.scss' as spotify;
+
+.header{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
