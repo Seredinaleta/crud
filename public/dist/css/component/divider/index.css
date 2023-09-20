@@ -1,0 +1,23 @@
+.click {
+  transition: opasity 0.3s ease;
+}
+
+.click:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.click:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,35 @@
+.click {
+  transition: opasity 0.3s ease;
+}
+
+.click:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.click:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+
+.heading__title {
+  font-size: 40px;
+  color: #0050FF;
+  font-weight: 500;
+}
+
+.heading__info {
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

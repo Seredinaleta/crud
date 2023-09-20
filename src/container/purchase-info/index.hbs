@@ -1,0 +1,33 @@
+<main>
+  {{#with data.purchase}}
+  <form class="formCard">
+  {{>heading title = "Інформація про замовлення"}}
+  {{>info title = "ID" value=id}}
+  {{>divider}}
+  <div class="formCard_field">
+    {{>info title = "Ім'я:" value=firstname}}
+    {{>info title = "Прізвище:" value=lastname}}
+    {{>info title = "Телефон:" value=phone}}
+    {{>info title = "Електронна пошта:" value=email}}
+  </div>
+  {{>divider}}
+  {{>info title = "Назва товару:" value=product.title}}
+  {{>info title = "Коментар:" value=comment}}
+  {{>divider}}
+  <div class="formCard_field">
+    {{>info title = "Вартість товарів:"fin=true  value = productPrice}}
+    {{>info title = "Вартість доставки:" fin=true value = deliveryPrice}}
+    {{>info title = "Сума до сплати:"fin=true value=totalPrice}}
+    {{/with}} 
+    
+    {{>info title = "Нараховані бонуси:" fin=true value=data.bonus}}
+    
+  </div>
+  {{>divider}}
+  
+    </form>
+   
+    <a class="link" href='/purchase-update?id={{data.id}}'>
+  {{>button text="Змінити дані"}}
+  </a>
+ </main>

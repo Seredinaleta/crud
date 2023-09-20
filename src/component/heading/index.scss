@@ -1,0 +1,26 @@
+@use '../../lib/service.scss' as s;
+.heading {
+display: flex;
+flex-direction: column;
+gap: 16px;
+padding-bottom: s.space(5);
+}
+.heading__title{
+    font-size: 40px;
+    color: s.color("accent");
+    font-weight: 500;
+   
+}
+.heading__info{
+    
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    margin-bottom: s.space(5);
+}
+ 
+   
+   
+
+  
+    

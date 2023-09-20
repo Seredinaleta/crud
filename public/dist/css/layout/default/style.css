@@ -1,5 +1,26 @@
+.click {
+  transition: opasity 0.3s ease;
+}
+
+.click:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.click:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  max-width: 1920px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 100 auto;
+  color: #212529;
 }
 
 /*# sourceMappingURL=style.css.map */

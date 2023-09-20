@@ -1,0 +1,15 @@
+
+<main>
+<div class='message'>
+  <div class='message-content'>
+    {{#with data}}
+    <h1 class='message__title'>{{message}}
+    </h1>
+    <span class='message__info'>{{info}}</span>
+  </div>
+
+  <a class='message__button click' href={{link}}>Повернутися
+    назад</a>
+{{/with}}
+</div>
+</main>

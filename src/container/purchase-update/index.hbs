@@ -1,0 +1,28 @@
+<main>
+  
+  <form method="POST" action="/purchase-update?id={{data.id}}" class="form-card">
+  
+  {{>heading title=title}}
+  {{#with data}}
+    <ul class="cart">
+   
+    {{>info title = "ID" value=id}}
+    
+  </ul>
+    {{#with purchase}}
+    {{>divider}}
+    <div class="smallField">
+      {{>field label="Прізвище" name="lastname" value=lastname}}
+      {{>field label="Ім'я" name="firstname" value = firstname}}
+      
+    </div>
+    <div class="smallfield">
+      {{>field label="Пошта" name="email" value=email}}
+      {{>field label="Телефон" name="phone" value=phone}}
+    </div>
+    {{/with}}
+    {{>button text="Зберегти зміни"}}
+  {{/with}} 
+  </form>
+   
+</main>

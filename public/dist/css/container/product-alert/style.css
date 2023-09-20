@@ -1,6 +1,5 @@
 .click {
-  transition: opacity;
-  transition-delay: 0.5s;
+  transition: opasity 0.3s ease;
 }
 
 .click:hover {
@@ -13,19 +12,8 @@
   cursor: pointer;
 }
 
-.click {
-  transition: opacity;
-  transition-delay: 0.5s;
-}
-
-.click:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-.click:active {
-  opacity: 0.4;
-  cursor: pointer;
+main {
+  padding: 20px;
 }
 
 .message {
@@ -43,12 +31,14 @@
 }
 .message__info {
   padding-bottom: 16px;
+  font-size: 16px;
 }
 .message__button {
   display: flex;
+  gap: 10px;
   border-radius: 5px;
   padding: 10px 30px;
-  background-color: rgb(55, 88, 234);
+  background-color: #0050FF;
   color: fff;
   text-decoration: none;
   justify-content: center;

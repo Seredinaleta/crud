@@ -1,3 +1,12 @@
+@use '../../lib/service.scss' as s;
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 1920px;
+    
+    
+}
+main {
+   max-width: 1000px; 
+   margin: 100 auto;
+   color: s.color("main")
 }

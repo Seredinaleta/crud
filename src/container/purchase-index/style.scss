@@ -1,0 +1,22 @@
+@use '../../lib/service.scss' as s;
+@use'../../component/heading/index.scss' as heading;
+@use'../../component/purchase-product/index.scss' as purchaseProduct;
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: s.space(5);
+    gap:s.space(10);
+
+}
+.product__container {
+    // display: flex;
+    // gap: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 20px
+    
+}
+

@@ -1,6 +1,5 @@
 .click {
-  transition: opacity;
-  transition-delay: 0.5s;
+  transition: opasity 0.3s ease;
 }
 
 .click:hover {
@@ -19,7 +18,7 @@ main {
 }
 
 .page__title {
-  color: rgb(55, 88, 234);
+  color: #0050FF;
   font-size: 24px;
   margin: 16px;
   padding: 16px;
@@ -81,7 +80,7 @@ main {
   gap: 8px;
 }
 .form__button {
-  background-color: rgb(55, 88, 234);
+  background-color: #0050FF;
   color: fff;
   border: 1px solid #ddd;
   padding: 8px;

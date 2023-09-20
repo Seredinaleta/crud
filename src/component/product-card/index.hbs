@@ -11,8 +11,10 @@
     <div class='product-card__price'>{{price}}₴</div>
 
     <a
-      href='/product-edit?id={{id}}'
-      class='product-card__edit click'
+      href='/product-edit?id={{id}}'>
+      {{>button text='Купити зараз' price=price}}</a>
+      {{!-- class='product-card__edit click' --}}
+     
     >Редагувати</a>
   </div>
 </div>
