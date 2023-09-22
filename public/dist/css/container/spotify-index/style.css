@@ -140,13 +140,31 @@ a:hover {
   color: #808080;
 }
 
-.add_button {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header_icons {
+  display: flex;
+  gap: 28px;
+}
+
+.list {
   display: grid;
-  grid-template-columns: 92px 1fr;
-  align-items: center;
-  gap: 24px;
-  color: #ddd;
-  font-size: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+}
+
+.playlist_card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.playlist_image {
+  height: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,13 +5,6 @@
       <h1 class='title title--center'>{{name}}</h1>
       <ul class='track_list'>
 
-        <li class='add_button'>
-          <img src='/svg/add.svg' alt='' />
-          <a href='/spotify-playlist-add?id={{playlistId}}'>
-            <strong class='track_name'>Додати до плейлістів</strong>
-          </a>
-        </li>
-
         {{#each tracks}}
           <li class='track'>
             <img src='{{image}}' alt='{{name}}' />
@@ -19,8 +12,10 @@
               <strong class='track_name'>{{name}}</strong>
               <em class='track_author'>{{author}}</em>
             </div>
-            <a href='/spotify-track-delete?playlistId={{../playlistId}}&trackId={{id}}'>
-              <img src='/svg/delete.svg' alt='' />
+            <a
+              href='/spotify-track-add?playlistId={{../playlistId}}&trackId={{id}}'
+            >
+              <img src='/svg/plus.svg' alt='' />
             </a>
           </li>
         {{/each}}

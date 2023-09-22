@@ -106,9 +106,38 @@ a:hover {
   justify-content: center;
   gap: 8px;
 }
-.track_content_name {
+.track_name {
   font-size: 24px;
   color: #ddd;
+}
+.track_author {
+  font-size: 16px;
+  color: #808080;
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 28px;
+  align-items: center;
+}
+.playlist_list {
+  display: grid;
+  gap: 28px;
+}
+.playlist_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.playlist_name {
+  font-size: 24px;
+  color: #ddd;
+}
+.playlist_amount {
+  font-size: 16px;
+  color: #808080;
 }
 
 .choose {

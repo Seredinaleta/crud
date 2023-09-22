@@ -89,14 +89,43 @@ transition: opacity 0.6s ease;
     flex-direction: column;
     justify-content: center;
     gap:s.space(2);
-
+}
 &_name {
     font-size: 24px;
     color: s.color("light")
 }
-// &_author {
-//     font-size: 24px;
-//     color: s.color("light")
-// }     
+&_author {
+    font-size: 16px;
+    color: s.color("border")
 }
+}
+
+.playlist{
+  display:grid;
+  grid-template-columns: 92px 1fr;
+  gap:s.space(7);
+  align-items: center;
+
+  &_list {
+  display: grid;  
+  gap: s.space(7)
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: s.space(2);
+
+
+  }
+  &_name {
+    font-size: 24px;
+    color: s.color("light");
+
+  }
+  &_amount {
+    font-size: 16px;
+    color: s.color("border")
+  }
 }
