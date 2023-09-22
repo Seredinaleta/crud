@@ -1,0 +1,23 @@
+<main class='main'>
+  <div class='main_content'>
+    {{#with data}}
+      <h1
+        class='title title--center title--small'
+      >{{message}}</h1>
+      <form class='form'>
+        <input
+          type='text'
+          class='form_field'
+          placeholder='{{info}}'
+          name='name'
+          disabled
+        />
+      </form>
+      <a class='alert_button' href={{link}}>
+        <button
+          class='form_button alert_button'
+        >Повернутися</button>
+      </a>
+    {{/with}}
+  </div>
+</main>

@@ -1,0 +1,161 @@
+.click {
+  transition: opasity 0.3s ease;
+}
+
+.click:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.click:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opasity 0.6s;
+}
+a:hover {
+  opacity: 0.6;
+}
+
+.main {
+  background-color: #121212;
+  color: #ddd;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 24px 8px;
+}
+
+.main_content {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.title--center {
+  text-align: center;
+}
+
+.title--small {
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+}
+
+.form_field {
+  width: 100%;
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+  padding: 16px;
+  border-bottom: 1px solid #808080;
+}
+
+.form_button {
+  display: flex;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: #20D562;
+  color: #121212;
+  font-size: 20px;
+  font-weight: 500;
+  transition: opacity 0.6s ease;
+}
+.form_button:hover {
+  opacity: 0.6;
+}
+.form_button:active {
+  opacity: 0.3;
+}
+
+.track_list {
+  display: grid;
+  gap: 28px;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: 92px 1fr 42px;
+  gap: 28px;
+  align-items: center;
+}
+.track_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.track_name {
+  font-size: 24px;
+  color: #ddd;
+}
+.track_author {
+  font-size: 16px;
+  color: #808080;
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 28px;
+  align-items: center;
+}
+.playlist_list {
+  display: grid;
+  gap: 28px;
+}
+.playlist_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.playlist_name {
+  font-size: 24px;
+  color: #ddd;
+}
+.playlist_amount {
+  font-size: 16px;
+  color: #808080;
+}
+
+.search {
+  background-color: #292929;
+  padding: 8px 32px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: 32px;
+  color: #ddd;
+  font-size: 24px;
+}
+.search_button {
+  color: #ddd;
+  transition: opacity 0.6s ease;
+}
+.search_button:hover {
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */
